@@ -4,11 +4,16 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-
-import IndexPage from "./src/pages/IndexPage";
+import IndexPage from "./pages/IndexPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route path="/" element={<IndexPage />}></Route>)
+  createRoutesFromElements(
+    <>
+      <Route index element={<IndexPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </>
+  )
 );
 
 const App = () => {
