@@ -3,9 +3,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <header className="bg-indigo-600 text-white">
+      <header className="text-slate-50">
         <nav className="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-          <a href="#" className="text-2xl font-semibold">
+          <a href="#" className="text-2xl font-bold">
             Victor Muthomi
           </a>
           <ul className="flex space-x-6">
@@ -27,6 +27,12 @@ const Navbar = () => {
             <li>
               <a href="#contact" className="hover:text-indigo-300">
                 Contact
+              </a>
+            </li>
+
+            <li>
+              <a href="#socials" className="hover:text-indigo-300">
+                Socials
               </a>
             </li>
           </ul>
